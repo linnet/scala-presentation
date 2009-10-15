@@ -36,7 +36,7 @@
 <node CREATED="1253444983524" ID="Freemind_Link_1344813030" MODIFIED="1253444991407" TEXT="javap -private CreditCard"/>
 </node>
 </node>
-<node CREATED="1253445046307" FOLDED="true" ID="Freemind_Link_1306823365" MODIFIED="1253445049114" TEXT="Properties">
+<node CREATED="1253445046307" ID="Freemind_Link_1306823365" MODIFIED="1253445049114" TEXT="Properties">
 <node CREATED="1253445050411" ID="Freemind_Link_981000409" MODIFIED="1253445075998" TEXT="var -&gt; private field + getter/setter"/>
 <node CREATED="1253445058659" ID="Freemind_Link_1465178541" MODIFIED="1253445080943" TEXT="val -&gt; private field + getter"/>
 <node CREATED="1253448377639" ID="Freemind_Link_47170290" MODIFIED="1253448402732" TEXT="@scala.reflect.BeanProperty giver normale getter/setter-par"/>
@@ -123,9 +123,9 @@
 <node CREATED="1254852031112" ID="Freemind_Link_841435755" MODIFIED="1254852064350" TEXT="for (i &lt;- 1 to 10; j &lt;- 2 to 4) { ... }"/>
 </node>
 </node>
-<node CREATED="1254852128246" ID="Freemind_Link_819956434" MODIFIED="1254852136826" TEXT="Pattern matching">
+<node CREATED="1254852128246" FOLDED="true" ID="Freemind_Link_819956434" MODIFIED="1254852136826" TEXT="Pattern matching">
 <node CREATED="1254852172986" ID="Freemind_Link_474259743" MODIFIED="1254852226104" TEXT="variable match {&#xa;    case &quot;match 1&quot; =&gt; ...&#xa;    case &quot;match 2&quot; =&gt; ...&#xa;}"/>
-<node CREATED="1254852959486" ID="Freemind_Link_1501506812" MODIFIED="1254852979664" TEXT="case expression">
+<node CREATED="1254852959486" ID="Freemind_Link_1501506812" MODIFIED="1255184166453" TEXT="Case expression">
 <node CREATED="1254852980415" ID="Freemind_Link_915892321" MODIFIED="1254852990516" TEXT="Kan v&#xe6;re literals eller konstanter"/>
 <node CREATED="1254853114738" FOLDED="true" ID="Freemind_Link_581075553" MODIFIED="1254853128898" TEXT="Tuples">
 <node CREATED="1254853129707" ID="Freemind_Link_711162678" MODIFIED="1254853167425" TEXT="case (key, value) =&gt; printf(&quot;Value of %s is %s&quot;, key, value)"/>
@@ -139,12 +139,116 @@
 </node>
 <node CREATED="1254852991392" ID="Freemind_Link_736579225" MODIFIED="1254852996604" TEXT="Forskellige typer kan blandes"/>
 <node CREATED="1254853018510" ID="Freemind_Link_653622371" MODIFIED="1254853046018" TEXT="case _ svarer til default:"/>
+<node CREATED="1255025620961" ID="Freemind_Link_1555619812" MODIFIED="1255025659225" TEXT="case value : Int =&gt; ..."/>
+<node CREATED="1255025640973" ID="Freemind_Link_361154294" MODIFIED="1255025654065" TEXT="case value : Int if value &gt; 42 =&gt; ..."/>
+</node>
+<node CREATED="1255184157312" FOLDED="true" ID="Freemind_Link_1279526991" MODIFIED="1255184161797" TEXT="Case classes">
+<node CREATED="1255184169209" ID="Freemind_Link_297559635" MODIFIED="1255187195986" TEXT="//START:CASECLASSES&#xa;abstract case class Trade()&#xa;case class Sell(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Buy(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Hedge(stockSymbol: String, quantity: Int) extends Trade&#xa;//END:CASECLASSES&#xa;                   &#xa;//START:PROCESSOR&#xa;class TradeProcessor {&#xa;  def processTransaction(request : Trade) {&#xa;    request match {&#xa;      case Sell(stock, 1000) =&gt; println(&quot;Selling 1000-units of &quot; + stock)&#xa;      case Sell(stock, quantity) =&gt; &#xa;            printf(&quot;Selling %d units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) if (quantity &gt; 2000) =&gt; &#xa;        printf(&quot;Buying %d (large) units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) =&gt; &#xa;            printf(&quot;Buying %d units of %s\n&quot;, quantity, stock)&#xa;    }&#xa;  }&#xa;}&#xa;//END:PROCESSOR&#xa;&#xa;val tradeProcessor = new TradeProcessor&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 500))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 700))&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 1000))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 3000))"/>
+</node>
+<node CREATED="1255187797969" ID="Freemind_Link_877468480" MODIFIED="1255187800221" TEXT="Extractors">
+<node CREATED="1255187800881" ID="Freemind_Link_724113057" MODIFIED="1255187977284" TEXT="object Symbol {    // Extractor object&#xa;    def unapply(symbol : String) : Boolean = { ... }&#xa;}"/>
+<node CREATED="1255187846162" ID="Freemind_Link_94658846" MODIFIED="1255187902770" TEXT="Giver mulighed for at matche p&#xe5; en klasse.&#xa;unapply &quot;mapper bagl&#xe6;ns&quot; fra en streng til et match"/>
+</node>
+<node CREATED="1255189281852" FOLDED="true" ID="Freemind_Link_1938032005" MODIFIED="1255189286040" TEXT="Regular expressions">
+<node CREATED="1255189286564" ID="Freemind_Link_1500880481" MODIFIED="1255189860065" TEXT="def process(input : String) {        &#xa;  val GoogStock = &quot;&quot;&quot;^GOOG:(\d*\.\d+)&quot;&quot;&quot;.r&#xa;  input match {&#xa;    case GoogStock(price) =&gt; println(&quot;Price of GOOG is &quot; + price)&#xa;    case _ =&gt; println(&quot;not processing &quot; + input)&#xa;  }&#xa;}&#xa;&#xa;process(&quot;GOOG:310.84&quot;)&#xa;process(&quot;GOOG:310&quot;)&#xa;process(&quot;IBM:84.01&quot;)"/>
+</node>
+</node>
+<node CREATED="1255189482273" FOLDED="true" ID="Freemind_Link_636909104" MODIFIED="1255189485549" TEXT="Regular expressions">
+<node CREATED="1255189486066" ID="Freemind_Link_1147785320" MODIFIED="1255189509417" TEXT="&quot;(S|s)cala&quot;.r"/>
+<node CREATED="1255189522113" ID="Freemind_Link_667295391" MODIFIED="1255189523286" TEXT="&quot;&quot;&quot;\d2:\d2:\d4&quot;&quot;&quot;"/>
+<node CREATED="1255189528650" ID="Freemind_Link_967644031" MODIFIED="1255189542424" TEXT="pattern findFirstIn str"/>
+<node CREATED="1255189543331" ID="Freemind_Link_661096312" MODIFIED="1255189547166" TEXT="pattern findAllIn str"/>
+<node CREATED="1255189550138" ID="Freemind_Link_741943350" MODIFIED="1255189559926" TEXT="pattern replaceFirstIn str"/>
+</node>
+<node CREATED="1255625490202" ID="Freemind_Link_1511262971" MODIFIED="1255625495796" TEXT="Exceptionh&#xe5;ndtering">
+<node CREATED="1255625502649" ID="Freemind_Link_1711997060" MODIFIED="1255625504021" TEXT="Scala opererer ikke med checked exceptions">
+<node CREATED="1255625526954" ID="Freemind_Link_1330808929" MODIFIED="1255625527725" TEXT="Ikke n&#xf8;dvendigt at erkl&#xe6;re checked exceptions, der kastes"/>
+</node>
+<node CREATED="1255625512090" ID="Freemind_Link_463704136" MODIFIED="1255625517037" TEXT="throw som i Java"/>
+<node CREATED="1255625536401" ID="Freemind_Link_1343595847" MODIFIED="1255625537237" TEXT="try som i Java"/>
+<node CREATED="1255625544867" ID="Freemind_Link_1719567381" MODIFIED="1255625545622" TEXT="catch">
+<node CREATED="1255625551274" ID="Freemind_Link_267194300" MODIFIED="1255625561032" TEXT="catch {&#xa;      case ex: IllegalArgumentException =&gt; ...&#xa;      case ex: NullPointerException =&gt; ...&#xa;      case _ =&gt; ... if all else fails ...&#xa;}"/>
 </node>
 </node>
 </node>
 <node CREATED="1254652716356" ID="Freemind_Link_297016473" MODIFIED="1254652720344" POSITION="left" TEXT="DSL&apos;er i Scala">
 <node CREATED="1254652722618" ID="Freemind_Link_82224578" MODIFIED="1254652738559" TEXT="Implicit typekonvertering"/>
 <node CREATED="1254654129890" ID="Freemind_Link_939150883" MODIFIED="1254654169254" TEXT="implicit def conversionMethod(number: Int) : new DateHelper(number)"/>
+</node>
+<node CREATED="1255189892309" FOLDED="true" ID="Freemind_Link_65823645" MODIFIED="1255189895417" POSITION="right" TEXT="Concurrency">
+<node CREATED="1255200913021" ID="Freemind_Link_1698137154" MODIFIED="1255200924042" TEXT="Actors">
+<node CREATED="1255201057918" ID="Freemind_Link_1754633129" MODIFIED="1255201351439" TEXT="Eksempler">
+<node CREATED="1255201359211" ID="Freemind_Link_1203957973" MODIFIED="1255201369592" TEXT="Sequential-calc.scala (sekventiel beregning)"/>
+<node CREATED="1255201351867" ID="Freemind_Link_514539430" MODIFIED="1255201355119" TEXT="PingPong.scala"/>
+<node CREATED="1255201370828" ID="Freemind_Link_1781323978" MODIFIED="1255201378760" TEXT="Parallel-calc.scala (parallel beregning)"/>
+</node>
+</node>
+<node CREATED="1255200924942" ID="Freemind_Link_106537556" MODIFIED="1255200966005" TEXT="actor {&#xa;    caller ! &lt;invocation&gt;&#xa;}">
+<node CREATED="1255374521441" ID="Freemind_Link_902923115" MODIFIED="1255374543987" TEXT="Typisk vil man bruge actor() metoden&#xa;p&#xe5; Actor singletonobjektet"/>
+<node CREATED="1255375317467" ID="Freemind_Link_1405990830" MODIFIED="1255376267887" TEXT="Ellers kan man extende Actor-klassen&#xa;(og implementere act-metoden) og&#xa;kalde start() p&#xe5; instansen"/>
+</node>
+<node CREATED="1255200967632" ID="Freemind_Link_961013667" MODIFIED="1255200990186" TEXT="receive {&#xa;    case result : type =&gt; ...&#xa;}"/>
+<node CREATED="1255451997486" ID="Freemind_Link_791024350" MODIFIED="1255452000903" TEXT="loopWhile">
+<node CREATED="1255452002327" ID="Freemind_Link_145455699" MODIFIED="1255452007762" TEXT="LoopConcurrent.scala"/>
+</node>
+<node CREATED="1255452090803" ID="Freemind_Link_1729628139" MODIFIED="1255452100938" TEXT="Konklusion">
+<node CREATED="1255452101763" ID="Freemind_Link_1327311304" MODIFIED="1255452117503" TEXT="Stadig vigtigt at fokusere p&#xe5; de gode dyder (immutability)"/>
+<node CREATED="1255452118908" ID="Freemind_Link_35750627" MODIFIED="1255452131503" TEXT="Scala g&#xf8;r det nemmere - men concurrency er bare komplekst"/>
+</node>
+</node>
+<node CREATED="1255461611721" ID="Freemind_Link_42209023" MODIFIED="1255461622244" POSITION="left" TEXT="Interop med Java">
+<node CREATED="1255461668830" ID="Freemind_Link_1740717720" MODIFIED="1255461757098" TEXT="scalac genererer alm. bytecode">
+<node CREATED="1255462084675" ID="Freemind_Link_755317707" MODIFIED="1255462110336" TEXT="scalac -sourcepath . UsePersonClass.scala&#xa;java -classpath .../scala-library.jar:. UsePersonClass"/>
+</node>
+<node CREATED="1255461663751" ID="Freemind_Link_1865257864" MODIFIED="1255461667418" TEXT="scala-library.jar"/>
+<node CREATED="1255461795321" ID="Freemind_Link_662805428" MODIFIED="1255461841848" TEXT="Som udgangspunkt er java.lang._ importeret -&#xa;alt andet skal importeres (som normalt)"/>
+<node CREATED="1255461896073" ID="Freemind_Link_1399280049" MODIFIED="1255462166381" TEXT="Brug af Java fra Scala">
+<node CREATED="1255461902825" ID="Freemind_Link_703329320" MODIFIED="1255461938408" TEXT="UseJDKClasses.scala"/>
+</node>
+<node CREATED="1255462181075" ID="Freemind_Link_1768381304" MODIFIED="1255462185838" TEXT="Brug af Scala fra Java">
+<node CREATED="1255624480152" ID="Freemind_Link_335000333" MODIFIED="1255624485761" TEXT="Simpelt hvis det bare er almindelige Scala-klasser uden dikkedarer">
+<node CREATED="1255624494566" ID="Freemind_Link_882548271" MODIFIED="1255624495729" TEXT="mere besv&#xe6;rligt, hvis der f.eks. benyttes closures som metodeparametre (h&#xf8;jereordenfunktioner)"/>
+</node>
+<node CREATED="1255624821134" ID="Freemind_Link_411589258" MODIFIED="1255624822115" TEXT="Compile med hhv. scalac og javac"/>
+<node CREATED="1255624829144" ID="Freemind_Link_1209168804" MODIFIED="1255624829803" TEXT="Afvikles med java (+ scala-library.jar i classpath)"/>
+<node CREATED="1255625372527" ID="Freemind_Link_1250489220" MODIFIED="1255625613491" TEXT="Kr&#xf8;ller">
+<node CREATED="1255625376144" ID="Freemind_Link_1334629390" MODIFIED="1255625377436" TEXT="Interfaces">
+<node CREATED="1255625384647" ID="Freemind_Link_984354814" MODIFIED="1255625386331" TEXT="Lav en trait uden implementation ==&gt; interface i bytecode"/>
+</node>
+<node CREATED="1255625395976" ID="Freemind_Link_1691066135" MODIFIED="1255625419283" TEXT="Singleton object">
+<node CREATED="1255625419768" ID="Freemind_Link_945446177" MODIFIED="1255625420596" TEXT="class classname og class classname$"/>
+</node>
+<node CREATED="1255625408368" ID="Freemind_Link_89898116" MODIFIED="1255625409267" TEXT="Companion object">
+<node CREATED="1255625430183" ID="Freemind_Link_891510944" MODIFIED="1255625433036" TEXT="class classname =&gt; companion-klassen, class classname$ =&gt; companion-objektet"/>
+<node CREATED="1255625441665" ID="Freemind_Link_331103918" MODIFIED="1255625452066" TEXT="new Buddy().greet();&#xa;Buddy$.MODULE$.greet(); "/>
+</node>
+<node CREATED="1255625459953" ID="Freemind_Link_516423341" MODIFIED="1255625460837" TEXT="Exceptions">
+<node CREATED="1255625467288" ID="Freemind_Link_1927913508" MODIFIED="1255625467925" TEXT="Scala erkl&#xe6;rer ikke exceptions, s&#xe5; fors&#xf8;g p&#xe5; at kaste en exception fra en Java-subklasse"/>
+<node CREATED="1255625473505" ID="Freemind_Link_946479861" MODIFIED="1255625473941" TEXT="Man kan dog s&#xe6;tte en @throws-annotation p&#xe5;"/>
+</node>
+<node CREATED="1255625613466" ID="Freemind_Link_1509710511" MODIFIED="1255625624279" TEXT="Get/set">
+<node CREATED="1255625575691" ID="Freemind_Link_174833401" MODIFIED="1255625588711" TEXT="@scala.reflect.BeanProperty giver Java-kompatible getter/setter-par"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1255628396643" ID="Freemind_Link_1933941127" MODIFIED="1255628401488" POSITION="right" TEXT="Scala in Action">
+<node CREATED="1255628414252" ID="Freemind_Link_428115244" MODIFIED="1255628415648" TEXT="L&#xe6;sning fra fil">
+<node CREATED="1255628424773" ID="Freemind_Link_1259804586" MODIFIED="1255628425928" TEXT="Eksempel: http://media.pragprog.com/titles/vsscala/code/UsingScala/ReadingFile.scala"/>
+<node CREATED="1255628432652" ID="Freemind_Link_673314515" MODIFIED="1255628444891" TEXT="import scala.io.Source&#xa;&#xa;Source.fromFile(&quot;filename.txt&quot;).foreach { print }"/>
+</node>
+<node CREATED="1255628456013" ID="Freemind_Link_1685752349" MODIFIED="1255628456808" TEXT="XML">
+<node CREATED="1255629512467" ID="Freemind_Link_1229816679" MODIFIED="1255629517919" TEXT="XML literals">
+<node CREATED="1255628479093" ID="Freemind_Link_123833235" MODIFIED="1255630078071" TEXT="val xmlFragment =&#xa;&lt;symbols&gt;&#xa;  &lt;symbol ticker=&quot;AAPL&quot;&gt;&lt;units&gt;200&lt;/units&gt;&lt;/symbol&gt;&#xa;  &lt;symbol ticker=&quot;IBM&quot;&gt;&lt;units&gt;215&lt;/units&gt;&lt;/symbol&gt;&#xa;&lt;/symbols&gt;"/>
+</node>
+<node CREATED="1255629524147" ID="Freemind_Link_1716718229" MODIFIED="1255629530015" TEXT="XPath">
+<node CREATED="1255629472963" ID="Freemind_Link_1026447291" MODIFIED="1255630084036" TEXT="xmlFragment \ &quot;symbol&quot;"/>
+<node CREATED="1255630116408" ID="Freemind_Link_932583586" MODIFIED="1255630125083" TEXT="xmlFragment \\ &quot;units&quot;"/>
+</node>
+<node CREATED="1255632468630" ID="Freemind_Link_928723331" MODIFIED="1255632471187" TEXT="Pattern matching">
+<node CREATED="1255632471766" ID="Freemind_Link_268086867" MODIFIED="1255632478846" TEXT="unitsNodes(0) match {&#xa;  case &lt;units&gt;{numberOfUnits}&lt;/units&gt; =&gt; println(&quot;Units: &quot; + numberOfUnits) &#xa;}"/>
+</node>
+</node>
 </node>
 </node>
 </map>

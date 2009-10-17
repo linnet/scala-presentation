@@ -21,16 +21,9 @@
 <node CREATED="1255782457945" ID="Freemind_Link_411622705" MODIFIED="1255782462724" TEXT="Udvidelse af kode"/>
 <node CREATED="1255782463576" ID="Freemind_Link_33249779" MODIFIED="1255782466996" TEXT="Afvikling af kode"/>
 </node>
-<node CREATED="1253376190360" ID="Freemind_Link_263603318" MODIFIED="1253376195435" TEXT="Funktionsorienteret">
-<node CREATED="1255782116683" ID="Freemind_Link_1481069865" MODIFIED="1255782121646" TEXT="H&#xf8;jereordensfunktioner">
-<node COLOR="#990000" CREATED="1255782123908" ID="Freemind_Link_445697847" MODIFIED="1255782164804" TEXT="Eksempel p&#xe5; funktion, der tager funktion som parameter">
-<edge WIDTH="thin"/>
 </node>
 </node>
-</node>
-</node>
-</node>
-<node CREATED="1253443415941" ID="Freemind_Link_87810852" MODIFIED="1253443421896" POSITION="right" TEXT="Grundl&#xe6;ggende">
+<node CREATED="1253443415941" FOLDED="true" ID="Freemind_Link_87810852" MODIFIED="1255807839822" POSITION="right" TEXT="2. Grundl&#xe6;ggende">
 <node CREATED="1255782490706" ID="Freemind_Link_1138402286" MODIFIED="1255782492266" TEXT="Principper">
 <node CREATED="1255782493250" ID="Freemind_Link_410729912" MODIFIED="1255782497212" TEXT="Static findes ikke">
 <node CREATED="1255782498106" ID="Freemind_Link_881906031" MODIFIED="1255782596757" TEXT="Er uhensigtsm&#xe6;ssigt (bl.a.) i forhold til parallelisering"/>
@@ -40,9 +33,11 @@
 </node>
 <node CREATED="1255783098938" ID="Freemind_Link_441582930" MODIFIED="1255783220382" TEXT="Alt er objekter">
 <node CREATED="1255783220346" ID="Freemind_Link_1937670839" MODIFIED="1255783223589" TEXT="Primitiver">
-<node COLOR="#990000" CREATED="1255783104170" ID="Freemind_Link_219078249" MODIFIED="1255783200946" TEXT="1.metode p&#xe5; Int"/>
+<node COLOR="#000000" CREATED="1255783104170" ID="Freemind_Link_219078249" MODIFIED="1255805083732" TEXT="1 to 10"/>
 </node>
-<node CREATED="1255783224721" ID="Freemind_Link_1756687763" MODIFIED="1255783226970" TEXT="Funktioner"/>
+<node CREATED="1255783224721" ID="Freemind_Link_1756687763" MODIFIED="1255783226970" TEXT="Funktioner">
+<node CREATED="1255805092003" ID="Freemind_Link_170969550" MODIFIED="1255805105404" TEXT="(x: Int, y: Int) =&gt; x + y"/>
+</node>
 </node>
 <node CREATED="1255784635625" ID="Freemind_Link_1423658671" MODIFIED="1255784640429" TEXT="Typeinferens">
 <node CREATED="1255784641705" ID="Freemind_Link_1036139026" MODIFIED="1255784649621" TEXT="Hvis typen kan udledes, beh&#xf8;ver man ikke angive den">
@@ -108,6 +103,9 @@
 <node CREATED="1254653756191" ID="Freemind_Link_1086252112" MODIFIED="1255783000285" TEXT="Singleton og companion object -&gt; f.eks. til singletons">
 <node CREATED="1254653774855" ID="Freemind_Link_345468282" MODIFIED="1254653786500" TEXT="object Clazz i.s.f. class Clazz"/>
 <node CREATED="1255783006370" ID="Freemind_Link_1834688158" MODIFIED="1255783012117" TEXT="Alternativ til static"/>
+</node>
+<node CREATED="1255806512447" ID="Freemind_Link_658627150" MODIFIED="1255806517834" TEXT="Lazy initialization">
+<node CREATED="1255806518518" ID="Freemind_Link_1628695890" MODIFIED="1255806524525" TEXT="Eksempel: LazyInitialization.scala"/>
 </node>
 <node CREATED="1254673273628" FOLDED="true" ID="Freemind_Link_1113204422" MODIFIED="1254673285200" TEXT="&quot;Operator&quot; overloading">
 <node CREATED="1254764464943" ID="Freemind_Link_32539574" MODIFIED="1254764499810" TEXT="Scala har ikke operators som s&#xe5;dan, men&#xa;man kan lave &quot;sp&#xe6;ndende&quot; metodenavne"/>
@@ -182,7 +180,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1254767219903" FOLDED="true" ID="Freemind_Link_260022674" MODIFIED="1254767225803" TEXT="Loops">
+<node CREATED="1254767219903" ID="Freemind_Link_260022674" MODIFIED="1254767225803" TEXT="Loops">
 <node CREATED="1254767226504" ID="Freemind_Link_593236595" MODIFIED="1254767228889" TEXT="for">
 <node CREATED="1254767230000" ID="Freemind_Link_1526160313" MODIFIED="1254767584682" TEXT="for (i &lt;- 1 to 10) &#xa;    yield i * 2&#xa;(yield er valgfri, men danner en collection)"/>
 <node CREATED="1254767279745" ID="Freemind_Link_82021193" MODIFIED="1254767290925" TEXT="(1 to 10).map(_ * 2)"/>
@@ -238,11 +236,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1254652716356" ID="Freemind_Link_297016473" MODIFIED="1254652720344" POSITION="left" TEXT="DSL&apos;er i Scala">
-<node CREATED="1254652722618" ID="Freemind_Link_82224578" MODIFIED="1254652738559" TEXT="Implicit typekonvertering"/>
-<node CREATED="1254654129890" ID="Freemind_Link_939150883" MODIFIED="1254654169254" TEXT="implicit def conversionMethod(number: Int) : new DateHelper(number)"/>
-</node>
-<node CREATED="1255189892309" ID="Freemind_Link_65823645" MODIFIED="1255189895417" POSITION="right" TEXT="Concurrency">
+<node CREATED="1255189892309" FOLDED="true" ID="Freemind_Link_65823645" MODIFIED="1255807847021" POSITION="right" TEXT="3. Concurrency">
 <node CREATED="1255200913021" ID="Freemind_Link_1698137154" MODIFIED="1255200924042" TEXT="Actors">
 <node CREATED="1255787048542" ID="Freemind_Link_1734078482" MODIFIED="1255787059089" TEXT="Actors kommunikerer via message passing">
 <node CREATED="1255787069077" ID="Freemind_Link_223522894" MODIFIED="1255787075281" TEXT="Ingen delt mutable tilstand"/>
@@ -266,7 +260,7 @@
 <node CREATED="1255452118908" ID="Freemind_Link_35750627" MODIFIED="1255452131503" TEXT="Scala g&#xf8;r det nemmere - men concurrency er bare komplekst"/>
 </node>
 </node>
-<node CREATED="1255461611721" ID="Freemind_Link_42209023" MODIFIED="1255461622244" POSITION="left" TEXT="Interop med Java">
+<node CREATED="1255461611721" ID="Freemind_Link_42209023" MODIFIED="1255807852940" POSITION="left" TEXT="4. Interop med Java">
 <node CREATED="1255461668830" ID="Freemind_Link_1740717720" MODIFIED="1255461757098" TEXT="scalac genererer alm. bytecode">
 <node CREATED="1255462084675" ID="Freemind_Link_755317707" MODIFIED="1255462110336" TEXT="scalac -sourcepath . UsePersonClass.scala&#xa;java -classpath .../scala-library.jar:. UsePersonClass"/>
 </node>
@@ -302,7 +296,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1255628396643" ID="Freemind_Link_1933941127" MODIFIED="1255628401488" POSITION="right" TEXT="Scala in Action">
+<node CREATED="1255628396643" ID="Freemind_Link_1933941127" MODIFIED="1255807894132" POSITION="right" TEXT="5. Scala in Action">
+<node CREATED="1254652716356" ID="Freemind_Link_297016473" MODIFIED="1255807863577" TEXT="DSL&apos;er i Scala">
+<node CREATED="1254652722618" ID="Freemind_Link_82224578" MODIFIED="1254652738559" TEXT="Implicit typekonvertering"/>
+<node CREATED="1254654129890" ID="Freemind_Link_939150883" MODIFIED="1254654169254" TEXT="implicit def conversionMethod(number: Int) : new DateHelper(number)"/>
+</node>
 <node CREATED="1255628414252" ID="Freemind_Link_428115244" MODIFIED="1255628415648" TEXT="L&#xe6;sning fra fil">
 <node CREATED="1255628424773" ID="Freemind_Link_1259804586" MODIFIED="1255628425928" TEXT="Eksempel: http://media.pragprog.com/titles/vsscala/code/UsingScala/ReadingFile.scala"/>
 <node CREATED="1255628432652" ID="Freemind_Link_673314515" MODIFIED="1255628444891" TEXT="import scala.io.Source&#xa;&#xa;Source.fromFile(&quot;filename.txt&quot;).foreach { print }"/>

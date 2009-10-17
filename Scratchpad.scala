@@ -10,3 +10,4 @@ val friends = List(Person("Brian", "Sletten"), Person("Neal", "Ford"),
 val lastNames = for (friend <- friends; lastName = friend.lastName) yield lastName
 
 println(lastNames.mkString(", "))
+

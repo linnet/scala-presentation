@@ -1,10 +1,12 @@
-import java.util._
+val numbers = List(1, 3, 7, 9, 11, 35)
 
-val list1 = new ArrayList[Int]
+println("Head: " + numbers.head)
+println("Tail: " + numbers.tail)
+println
 
-list1 add 1
-list1 add 2
-//list1 add "Hello"
+val numbersWithZero = 0 :: numbers
+println(numbersWithZero)
+println
 
-println(list1.getClass)
-println(list1)
+val names = "Ane" :: "Benny" :: "Charlotte" :: Nil
+println(names)

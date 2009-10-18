@@ -1,4 +1,3 @@
-//START:ACTOR
 import scala.actors._
 import Actor._
 
@@ -20,9 +19,7 @@ class AnsweringService(val folks: String*) extends Actor {
     }
   }
 }
-//END:ACTOR
 
-//START:USE
 val answeringService1 = new AnsweringService("Sara", "Kara", "John")
 
 answeringService1 ! (self, "Sara", "In town")
@@ -41,4 +38,3 @@ answeringService1 ! "ping"
                          
 Thread.sleep(2000)
 println("The last ping was not processed")
-//END:USE

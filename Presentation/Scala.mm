@@ -23,7 +23,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1253443415941" ID="Freemind_Link_87810852" MODIFIED="1255807839822" POSITION="right" TEXT="2. Grundl&#xe6;ggende">
+<node COLOR="#338800" CREATED="1253443415941" FOLDED="true" ID="Freemind_Link_87810852" MODIFIED="1255854238999" POSITION="right" TEXT="2. Grundl&#xe6;ggende">
 <node COLOR="#338800" CREATED="1255782490706" FOLDED="true" ID="Freemind_Link_1138402286" MODIFIED="1255814284817" TEXT="Principper">
 <edge WIDTH="thin"/>
 <node CREATED="1255782493250" ID="Freemind_Link_410729912" MODIFIED="1255782497212" TEXT="Static findes ikke">
@@ -85,14 +85,14 @@
 <node COLOR="#000000" CREATED="1255802838212" ID="Freemind_Link_671378984" MODIFIED="1255813307286" TEXT="def add(x: Int)(y: Int) = x + y&#xa;val add5 = add(5) _"/>
 </node>
 </node>
-<node CREATED="1254673295869" ID="Freemind_Link_315835807" MODIFIED="1254673299404" TEXT="Collections">
-<node CREATED="1254673374839" ID="Freemind_Link_1079681796" MODIFIED="1254673387050" TEXT="Immutable vs. mutable"/>
-<node CREATED="1254673318838" ID="Freemind_Link_1011597" MODIFIED="1254673325317" TEXT="Set">
+<node COLOR="#338800" CREATED="1254673295869" FOLDED="true" ID="Freemind_Link_315835807" MODIFIED="1255849548492" TEXT="Collections">
+<node COLOR="#338800" CREATED="1254673374839" ID="Freemind_Link_1079681796" MODIFIED="1255848491219" TEXT="Immutable vs. mutable"/>
+<node COLOR="#338800" CREATED="1254673318838" ID="Freemind_Link_1011597" MODIFIED="1255848670764" TEXT="Set">
 <node CREATED="1254673326501" ID="Freemind_Link_1832854193" MODIFIED="1254673334105" TEXT="Shorthand for en meget l&#xe6;ngere syntaks"/>
 <node CREATED="1254673399791" ID="Freemind_Link_1697245196" MODIFIED="1254673420036" TEXT="++ (sammens&#xe6;tter to sets til et nyt)"/>
 <node CREATED="1254673453886" ID="Freemind_Link_1647464041" MODIFIED="1254673461498" TEXT="** (intersection)"/>
 </node>
-<node CREATED="1254673866644" ID="Freemind_Link_616969855" MODIFIED="1254673868736" TEXT="Map">
+<node COLOR="#338800" CREATED="1254673866644" ID="Freemind_Link_616969855" MODIFIED="1255849527816" TEXT="Map">
 <node CREATED="1254673870973" ID="Freemind_Link_1870732800" MODIFIED="1254673879712" TEXT="key -&gt; value"/>
 <node CREATED="1254674332271" ID="Freemind_Link_1604274592" MODIFIED="1254674347459" TEXT="map filterKeys ( _ startsWith &quot;D&quot; )"/>
 <node CREATED="1254674348567" ID="Freemind_Link_1840045531" MODIFIED="1254674434533" TEXT="map filter { element =&gt; &#xa;&#x9;val (key, value) = element&#xa;&#x9;key startsWith &quot;D&quot;&#xa;}">
@@ -106,45 +106,84 @@
 <node CREATED="1254676358886" ID="Freemind_Link_749684858" MODIFIED="1254676407905" TEXT="Bruger apply-metoden"/>
 </node>
 </node>
-<node CREATED="1254680040278" ID="Freemind_Link_241855039" MODIFIED="1254680043065" TEXT="List">
+<node COLOR="#338800" CREATED="1254680040278" FOLDED="true" ID="Freemind_Link_241855039" MODIFIED="1255848672836" TEXT="List">
 <node COLOR="#338800" CREATED="1254680045118" ID="Freemind_Link_1824597231" MODIFIED="1255818208251" TEXT="head">
 <node CREATED="1255804132227" ID="Freemind_Link_1731323766" MODIFIED="1255804135054" TEXT="F&#xf8;rste element"/>
 </node>
 <node COLOR="#338800" CREATED="1254680051366" ID="Freemind_Link_355765133" MODIFIED="1255818209059" TEXT="tail">
 <node CREATED="1255804123332" ID="Freemind_Link_1108054125" MODIFIED="1255804131071" TEXT="Alt p&#xe5; n&#xe6;r head"/>
 </node>
-<node CREATED="1254680053734" ID="Freemind_Link_1682162664" MODIFIED="1254763892067" TEXT="::">
+<node COLOR="#338800" CREATED="1254680053734" ID="Freemind_Link_1682162664" MODIFIED="1255847525386" TEXT="::">
 <node CREATED="1255804028328" ID="Freemind_Link_1312075958" MODIFIED="1255804030795" TEXT="List constructor"/>
 <node CREATED="1254763892447" ID="Freemind_Link_1422387857" MODIFIED="1254763893739" TEXT="a :: list (prefix a to list)"/>
 <node CREATED="1255804067953" ID="Freemind_Link_955332152" MODIFIED="1255804073213" TEXT="1 :: 2 :: 3 :: Nil"/>
 </node>
-<node CREATED="1254685384562" ID="Freemind_Link_30833154" MODIFIED="1254763902370" TEXT=":::">
+<node COLOR="#338800" CREATED="1254685384562" ID="Freemind_Link_30833154" MODIFIED="1255847529121" TEXT=":::">
 <node CREATED="1254763902879" ID="Freemind_Link_361793772" MODIFIED="1254763905339" TEXT="list1 ::: list2 (prefix list1 to list2)"/>
 </node>
-<node CREATED="1254763774579" ID="Freemind_Link_107823619" MODIFIED="1254763775982" TEXT="filter">
+<node COLOR="#338800" CREATED="1254763774579" ID="Freemind_Link_107823619" MODIFIED="1255847619440" TEXT="filter">
 <node CREATED="1254763908895" ID="Freemind_Link_215785868" MODIFIED="1254763921948" TEXT="list filter ( _ contains &quot;Jesper&quot; )"/>
 <node CREATED="1255801315124" ID="Freemind_Link_905311968" MODIFIED="1255801322366" TEXT="list filter (5 &gt;)"/>
 </node>
-<node CREATED="1254763776483" ID="Freemind_Link_1449042832" MODIFIED="1254763777862" TEXT="forall">
+<node COLOR="#338800" CREATED="1254763776483" ID="Freemind_Link_1449042832" MODIFIED="1255847907944" TEXT="forall">
 <node CREATED="1254763925624" ID="Freemind_Link_1998091215" MODIFIED="1254763947796" TEXT="list forall ( _ startsWith &quot;J&quot; )"/>
 </node>
-<node CREATED="1254763780307" ID="Freemind_Link_1904752098" MODIFIED="1254763792735" TEXT="exists">
+<node COLOR="#338800" CREATED="1254763780307" ID="Freemind_Link_1904752098" MODIFIED="1255847793314" TEXT="exists">
 <edge WIDTH="thin"/>
 <node CREATED="1254763956041" ID="Freemind_Link_151154352" MODIFIED="1254763961788" TEXT="list exists ( _ startsWith &quot;J&quot; )"/>
 </node>
-<node CREATED="1254763880526" ID="Freemind_Link_972652678" MODIFIED="1254763884122" TEXT="map">
+<node COLOR="#338800" CREATED="1254763880526" ID="Freemind_Link_972652678" MODIFIED="1255847906297" TEXT="map">
 <node CREATED="1254763964169" ID="Freemind_Link_1908462443" MODIFIED="1254763993590" TEXT="list map ( &quot;Hello, &quot; + _ )"/>
 </node>
-<node CREATED="1254764178181" ID="Freemind_Link_393331751" MODIFIED="1254764180250" TEXT="foldLeft">
+<node COLOR="#338800" CREATED="1254764178181" ID="Freemind_Link_393331751" MODIFIED="1255848479853" TEXT="foldLeft">
 <node CREATED="1254764180869" ID="Freemind_Link_634892752" MODIFIED="1254764209186" TEXT="numbers foldLeft(0) { (total, value) =&gt; total + value }">
 <node CREATED="1254764210438" ID="Freemind_Link_1448433470" MODIFIED="1254764214082" TEXT="beregner sum"/>
 </node>
 <node CREATED="1254764249844" ID="Freemind_Link_935256834" MODIFIED="1254764266440" TEXT="(0 /: numbers) { (total, value) =&gt; total + value }"/>
 <node CREATED="1254764345399" ID="Freemind_Link_335128795" MODIFIED="1254764353339" TEXT="(0 /: numbers) { _ + _ }"/>
 </node>
-<node CREATED="1254764434862" ID="Freemind_Link_1450283750" MODIFIED="1254764437483" TEXT="foldRight">
+<node COLOR="#338800" CREATED="1254764434862" ID="Freemind_Link_1450283750" MODIFIED="1255848480621" TEXT="foldRight">
 <node CREATED="1254764438158" ID="Freemind_Link_553245209" MODIFIED="1254764447682" TEXT="\:"/>
 </node>
+</node>
+</node>
+<node COLOR="#338800" CREATED="1254653756191" ID="Freemind_Link_1086252112" MODIFIED="1255851534909" TEXT="Singleton og companion object -&gt; f.eks. til singletons">
+<node CREATED="1254653774855" ID="Freemind_Link_345468282" MODIFIED="1254653786500" TEXT="object Clazz i.s.f. class Clazz"/>
+<node CREATED="1255783006370" ID="Freemind_Link_1834688158" MODIFIED="1255783012117" TEXT="Alternativ til static"/>
+<node CREATED="1254767596810" ID="Freemind_Link_1024215861" MODIFIED="1254767601578" TEXT="apply">
+<node CREATED="1254767602619" ID="Freemind_Link_1739547772" MODIFIED="1254767640546" TEXT="Defineres p&#xe5; companion object"/>
+<node CREATED="1254767641816" ID="Freemind_Link_692028160" MODIFIED="1254767702281" TEXT="Giver mulighed for f.eks. list(0) (indexer) eller andet uden at angive en metode"/>
+</node>
+</node>
+<node COLOR="#338800" CREATED="1254852128246" FOLDED="true" ID="Freemind_Link_819956434" MODIFIED="1255853421867" TEXT="Pattern matching">
+<node COLOR="#338800" CREATED="1254852172986" ID="Freemind_Link_474259743" MODIFIED="1255853078484" TEXT="variable match {&#xa;    case &quot;match 1&quot; =&gt; ...&#xa;    case &quot;match 2&quot; =&gt; ...&#xa;}"/>
+<node COLOR="#338800" CREATED="1254852959486" FOLDED="true" ID="Freemind_Link_1501506812" MODIFIED="1255853075773" TEXT="Case expression">
+<node COLOR="#338800" CREATED="1254852980415" ID="Freemind_Link_915892321" MODIFIED="1255853067774" TEXT="Kan v&#xe6;re literals eller konstanter"/>
+<node COLOR="#338800" CREATED="1254853114738" ID="Freemind_Link_581075553" MODIFIED="1255853067094" TEXT="Tuples">
+<node CREATED="1254853129707" ID="Freemind_Link_711162678" MODIFIED="1254853167425" TEXT="case (key, value) =&gt; printf(&quot;Value of %s is %s&quot;, key, value)"/>
+</node>
+<node COLOR="#338800" CREATED="1254853215487" ID="Freemind_Link_279878546" MODIFIED="1255853064214" TEXT="Lister&#xa;(list decomposition)">
+<node CREATED="1254853218152" ID="Freemind_Link_1710355295" MODIFIED="1254853246428" TEXT="case List(&quot;red&quot;, &quot;blue&quot;) =&gt; ..."/>
+<node CREATED="1254853233104" ID="Freemind_Link_1771365135" MODIFIED="1254853241588" TEXT="case List(&quot;red&quot;, _*) =&gt; ..."/>
+<node CREATED="1254853279673" ID="Freemind_Link_428699865" MODIFIED="1254853304265" TEXT="case List(&quot;red&quot;, remainingColors @ _*) =&gt; ...">
+<node CREATED="1254853304985" ID="Freemind_Link_1530467620" MODIFIED="1254853314981" TEXT="remainingColors s&#xe6;ttes til resten"/>
+</node>
+<node CREATED="1255804368929" ID="Freemind_Link_397642128" MODIFIED="1255804375635" TEXT="case x :: xs =&gt; ..."/>
+</node>
+<node COLOR="#338800" CREATED="1254852991392" ID="Freemind_Link_736579225" MODIFIED="1255853068902" TEXT="Forskellige typer kan blandes"/>
+<node COLOR="#338800" CREATED="1254853018510" ID="Freemind_Link_653622371" MODIFIED="1255853070830" TEXT="case _ svarer til default:"/>
+<node COLOR="#338800" CREATED="1255025620961" ID="Freemind_Link_1555619812" MODIFIED="1255853074461" TEXT="case value : Int =&gt; ..."/>
+<node COLOR="#338800" CREATED="1255025640973" ID="Freemind_Link_361154294" MODIFIED="1255853074845" TEXT="case value : Int if value &gt; 42 =&gt; ..."/>
+</node>
+<node COLOR="#338800" CREATED="1255184157312" FOLDED="true" ID="Freemind_Link_1279526991" MODIFIED="1255853243495" TEXT="Case classes">
+<node CREATED="1255184169209" ID="Freemind_Link_297559635" MODIFIED="1255187195986" TEXT="//START:CASECLASSES&#xa;abstract case class Trade()&#xa;case class Sell(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Buy(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Hedge(stockSymbol: String, quantity: Int) extends Trade&#xa;//END:CASECLASSES&#xa;                   &#xa;//START:PROCESSOR&#xa;class TradeProcessor {&#xa;  def processTransaction(request : Trade) {&#xa;    request match {&#xa;      case Sell(stock, 1000) =&gt; println(&quot;Selling 1000-units of &quot; + stock)&#xa;      case Sell(stock, quantity) =&gt; &#xa;            printf(&quot;Selling %d units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) if (quantity &gt; 2000) =&gt; &#xa;        printf(&quot;Buying %d (large) units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) =&gt; &#xa;            printf(&quot;Buying %d units of %s\n&quot;, quantity, stock)&#xa;    }&#xa;  }&#xa;}&#xa;//END:PROCESSOR&#xa;&#xa;val tradeProcessor = new TradeProcessor&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 500))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 700))&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 1000))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 3000))"/>
+</node>
+<node CREATED="1255187797969" ID="Freemind_Link_877468480" MODIFIED="1255187800221" TEXT="Extractors">
+<node CREATED="1255187800881" ID="Freemind_Link_724113057" MODIFIED="1255187977284" TEXT="object Symbol {    // Extractor object&#xa;    def unapply(symbol : String) : Boolean = { ... }&#xa;}"/>
+<node CREATED="1255187846162" ID="Freemind_Link_94658846" MODIFIED="1255187902770" TEXT="Giver mulighed for at matche p&#xe5; en klasse.&#xa;unapply &quot;mapper bagl&#xe6;ns&quot; fra en streng til et match"/>
+</node>
+<node COLOR="#338800" CREATED="1255189281852" ID="Freemind_Link_1938032005" MODIFIED="1255853420362" TEXT="Regular expressions">
+<node CREATED="1255189286564" ID="Freemind_Link_1500880481" MODIFIED="1255189860065" TEXT="def process(input : String) {        &#xa;  val GoogStock = &quot;&quot;&quot;^GOOG:(\d*\.\d+)&quot;&quot;&quot;.r&#xa;  input match {&#xa;    case GoogStock(price) =&gt; println(&quot;Price of GOOG is &quot; + price)&#xa;    case _ =&gt; println(&quot;not processing &quot; + input)&#xa;  }&#xa;}&#xa;&#xa;process(&quot;GOOG:310.84&quot;)&#xa;process(&quot;GOOG:310&quot;)&#xa;process(&quot;IBM:84.01&quot;)"/>
 </node>
 </node>
 <node CREATED="1255803308683" ID="Freemind_Link_1151927360" MODIFIED="1255803311276" TEXT="Generics">
@@ -155,18 +194,10 @@
 <node CREATED="1255792603832" ID="Freemind_Link_541691780" MODIFIED="1255792606652" TEXT="Predef-klassen">
 <node CREATED="1255792624330" ID="Freemind_Link_626391459" LINK="http://scala-tools.org/scaladocs/scala-library/2.7.1/scala/Predef$object.html" MODIFIED="1255792651860" TEXT="http://scala-tools.org/scaladocs/scala-library/2.7.1/scala/Predef$object.html"/>
 </node>
-<node CREATED="1254653756191" ID="Freemind_Link_1086252112" MODIFIED="1255783000285" TEXT="Singleton og companion object -&gt; f.eks. til singletons">
-<node CREATED="1254653774855" ID="Freemind_Link_345468282" MODIFIED="1254653786500" TEXT="object Clazz i.s.f. class Clazz"/>
-<node CREATED="1255783006370" ID="Freemind_Link_1834688158" MODIFIED="1255783012117" TEXT="Alternativ til static"/>
-<node CREATED="1254767596810" ID="Freemind_Link_1024215861" MODIFIED="1254767601578" TEXT="apply">
-<node CREATED="1254767602619" ID="Freemind_Link_1739547772" MODIFIED="1254767640546" TEXT="Defineres p&#xe5; companion object"/>
-<node CREATED="1254767641816" ID="Freemind_Link_692028160" MODIFIED="1254767702281" TEXT="Giver mulighed for f.eks. list(0) (indexer) eller andet uden at angive en metode"/>
-</node>
-</node>
-<node CREATED="1255806512447" ID="Freemind_Link_658627150" MODIFIED="1255806517834" TEXT="Lazy initialization">
+<node COLOR="#338800" CREATED="1255806512447" FOLDED="true" ID="Freemind_Link_658627150" MODIFIED="1255853892254" TEXT="Lazy initialization">
 <node CREATED="1255806518518" ID="Freemind_Link_1628695890" MODIFIED="1255806524525" TEXT="Eksempel: LazyInitialization.scala"/>
 </node>
-<node CREATED="1254673273628" ID="Freemind_Link_1113204422" MODIFIED="1254673285200" TEXT="&quot;Operator&quot; overloading">
+<node COLOR="#338800" CREATED="1254673273628" FOLDED="true" ID="Freemind_Link_1113204422" MODIFIED="1255853890686" TEXT="&quot;Operator&quot; overloading">
 <node CREATED="1254764464943" ID="Freemind_Link_32539574" MODIFIED="1254764499810" TEXT="Scala har ikke operators som s&#xe5;dan, men&#xa;man kan lave &quot;sp&#xe6;ndende&quot; metodenavne"/>
 <node CREATED="1254764502048" ID="Freemind_Link_1117882917" MODIFIED="1254764532268" TEXT="Efterstillet : vender om p&#xe5; objekt og parametre">
 <node CREATED="1254764533435" ID="Freemind_Link_1909345864" MODIFIED="1254764546744" TEXT="0 /: list"/>
@@ -182,38 +213,7 @@
 <node CREATED="1254852031112" ID="Freemind_Link_841435755" MODIFIED="1254852064350" TEXT="for (i &lt;- 1 to 10; j &lt;- 2 to 4) { ... }"/>
 </node>
 </node>
-<node CREATED="1254852128246" ID="Freemind_Link_819956434" MODIFIED="1254852136826" TEXT="Pattern matching">
-<node CREATED="1254852172986" ID="Freemind_Link_474259743" MODIFIED="1254852226104" TEXT="variable match {&#xa;    case &quot;match 1&quot; =&gt; ...&#xa;    case &quot;match 2&quot; =&gt; ...&#xa;}"/>
-<node CREATED="1254852959486" ID="Freemind_Link_1501506812" MODIFIED="1255184166453" TEXT="Case expression">
-<node CREATED="1254852980415" ID="Freemind_Link_915892321" MODIFIED="1254852990516" TEXT="Kan v&#xe6;re literals eller konstanter"/>
-<node CREATED="1254853114738" FOLDED="true" ID="Freemind_Link_581075553" MODIFIED="1254853128898" TEXT="Tuples">
-<node CREATED="1254853129707" ID="Freemind_Link_711162678" MODIFIED="1254853167425" TEXT="case (key, value) =&gt; printf(&quot;Value of %s is %s&quot;, key, value)"/>
-</node>
-<node CREATED="1254853215487" ID="Freemind_Link_279878546" MODIFIED="1255804421580" TEXT="Lister&#xa;(list decomposition)">
-<node CREATED="1254853218152" ID="Freemind_Link_1710355295" MODIFIED="1254853246428" TEXT="case List(&quot;red&quot;, &quot;blue&quot;) =&gt; ..."/>
-<node CREATED="1254853233104" ID="Freemind_Link_1771365135" MODIFIED="1254853241588" TEXT="case List(&quot;red&quot;, _*) =&gt; ..."/>
-<node CREATED="1254853279673" ID="Freemind_Link_428699865" MODIFIED="1254853304265" TEXT="case List(&quot;red&quot;, remainingColors @ _*) =&gt; ...">
-<node CREATED="1254853304985" ID="Freemind_Link_1530467620" MODIFIED="1254853314981" TEXT="remainingColors s&#xe6;ttes til resten"/>
-</node>
-<node CREATED="1255804368929" ID="Freemind_Link_397642128" MODIFIED="1255804375635" TEXT="case x :: xs =&gt; ..."/>
-</node>
-<node CREATED="1254852991392" ID="Freemind_Link_736579225" MODIFIED="1254852996604" TEXT="Forskellige typer kan blandes"/>
-<node CREATED="1254853018510" ID="Freemind_Link_653622371" MODIFIED="1254853046018" TEXT="case _ svarer til default:"/>
-<node CREATED="1255025620961" ID="Freemind_Link_1555619812" MODIFIED="1255025659225" TEXT="case value : Int =&gt; ..."/>
-<node CREATED="1255025640973" ID="Freemind_Link_361154294" MODIFIED="1255025654065" TEXT="case value : Int if value &gt; 42 =&gt; ..."/>
-</node>
-<node CREATED="1255184157312" FOLDED="true" ID="Freemind_Link_1279526991" MODIFIED="1255184161797" TEXT="Case classes">
-<node CREATED="1255184169209" ID="Freemind_Link_297559635" MODIFIED="1255187195986" TEXT="//START:CASECLASSES&#xa;abstract case class Trade()&#xa;case class Sell(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Buy(stockSymbol: String, quantity: Int) extends Trade&#xa;case class Hedge(stockSymbol: String, quantity: Int) extends Trade&#xa;//END:CASECLASSES&#xa;                   &#xa;//START:PROCESSOR&#xa;class TradeProcessor {&#xa;  def processTransaction(request : Trade) {&#xa;    request match {&#xa;      case Sell(stock, 1000) =&gt; println(&quot;Selling 1000-units of &quot; + stock)&#xa;      case Sell(stock, quantity) =&gt; &#xa;            printf(&quot;Selling %d units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) if (quantity &gt; 2000) =&gt; &#xa;        printf(&quot;Buying %d (large) units of %s\n&quot;, quantity, stock)&#xa;      case Buy(stock, quantity) =&gt; &#xa;            printf(&quot;Buying %d units of %s\n&quot;, quantity, stock)&#xa;    }&#xa;  }&#xa;}&#xa;//END:PROCESSOR&#xa;&#xa;val tradeProcessor = new TradeProcessor&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 500))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 700))&#xa;tradeProcessor.processTransaction(Sell(&quot;GOOG&quot;, 1000))&#xa;tradeProcessor.processTransaction(Buy(&quot;GOOG&quot;, 3000))"/>
-</node>
-<node CREATED="1255187797969" ID="Freemind_Link_877468480" MODIFIED="1255187800221" TEXT="Extractors">
-<node CREATED="1255187800881" ID="Freemind_Link_724113057" MODIFIED="1255187977284" TEXT="object Symbol {    // Extractor object&#xa;    def unapply(symbol : String) : Boolean = { ... }&#xa;}"/>
-<node CREATED="1255187846162" ID="Freemind_Link_94658846" MODIFIED="1255187902770" TEXT="Giver mulighed for at matche p&#xe5; en klasse.&#xa;unapply &quot;mapper bagl&#xe6;ns&quot; fra en streng til et match"/>
-</node>
-<node CREATED="1255189281852" FOLDED="true" ID="Freemind_Link_1938032005" MODIFIED="1255189286040" TEXT="Regular expressions">
-<node CREATED="1255189286564" ID="Freemind_Link_1500880481" MODIFIED="1255189860065" TEXT="def process(input : String) {        &#xa;  val GoogStock = &quot;&quot;&quot;^GOOG:(\d*\.\d+)&quot;&quot;&quot;.r&#xa;  input match {&#xa;    case GoogStock(price) =&gt; println(&quot;Price of GOOG is &quot; + price)&#xa;    case _ =&gt; println(&quot;not processing &quot; + input)&#xa;  }&#xa;}&#xa;&#xa;process(&quot;GOOG:310.84&quot;)&#xa;process(&quot;GOOG:310&quot;)&#xa;process(&quot;IBM:84.01&quot;)"/>
-</node>
-</node>
-<node CREATED="1255189482273" FOLDED="true" ID="Freemind_Link_636909104" MODIFIED="1255189485549" TEXT="Regular expressions">
+<node CREATED="1255189482273" ID="Freemind_Link_636909104" MODIFIED="1255189485549" TEXT="Regular expressions">
 <node CREATED="1255189486066" ID="Freemind_Link_1147785320" MODIFIED="1255189509417" TEXT="&quot;(S|s)cala&quot;.r"/>
 <node CREATED="1255189522113" ID="Freemind_Link_667295391" MODIFIED="1255189523286" TEXT="&quot;&quot;&quot;\d2:\d2:\d4&quot;&quot;&quot;"/>
 <node CREATED="1255189528650" ID="Freemind_Link_967644031" MODIFIED="1255189542424" TEXT="pattern findFirstIn str"/>
@@ -231,7 +231,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1255189892309" FOLDED="true" ID="Freemind_Link_65823645" MODIFIED="1255807847021" POSITION="right" TEXT="3. Concurrency">
+<node COLOR="#338800" CREATED="1255189892309" FOLDED="true" ID="Freemind_Link_65823645" MODIFIED="1255858956055" POSITION="right" TEXT="3. Concurrency">
 <node CREATED="1255200913021" ID="Freemind_Link_1698137154" MODIFIED="1255200924042" TEXT="Actors">
 <node CREATED="1255787048542" ID="Freemind_Link_1734078482" MODIFIED="1255787059089" TEXT="Actors kommunikerer via message passing">
 <node CREATED="1255787069077" ID="Freemind_Link_223522894" MODIFIED="1255787075281" TEXT="Ingen delt mutable tilstand"/>
@@ -255,7 +255,7 @@
 <node CREATED="1255452118908" ID="Freemind_Link_35750627" MODIFIED="1255452131503" TEXT="Scala g&#xf8;r det nemmere - men concurrency er bare komplekst"/>
 </node>
 </node>
-<node CREATED="1255461611721" ID="Freemind_Link_42209023" MODIFIED="1255807852940" POSITION="left" TEXT="4. Interop med Java">
+<node COLOR="#338800" CREATED="1255461611721" FOLDED="true" ID="Freemind_Link_42209023" MODIFIED="1255860087505" POSITION="left" TEXT="5. Interop med Java">
 <node CREATED="1255461668830" ID="Freemind_Link_1740717720" MODIFIED="1255461757098" TEXT="scalac genererer alm. bytecode">
 <node CREATED="1255462084675" ID="Freemind_Link_755317707" MODIFIED="1255462110336" TEXT="scalac -sourcepath . UsePersonClass.scala&#xa;java -classpath .../scala-library.jar:. UsePersonClass"/>
 </node>
@@ -291,7 +291,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1255628396643" ID="Freemind_Link_1933941127" MODIFIED="1255807894132" POSITION="right" TEXT="5. Scala in Action">
+<node COLOR="#338800" CREATED="1255629512467" FOLDED="true" ID="Freemind_Link_1229816679" MODIFIED="1255859558645" POSITION="right" TEXT="4. XML literals">
+<node CREATED="1255628479093" ID="Freemind_Link_123833235" MODIFIED="1255630078071" TEXT="val xmlFragment =&#xa;&lt;symbols&gt;&#xa;  &lt;symbol ticker=&quot;AAPL&quot;&gt;&lt;units&gt;200&lt;/units&gt;&lt;/symbol&gt;&#xa;  &lt;symbol ticker=&quot;IBM&quot;&gt;&lt;units&gt;215&lt;/units&gt;&lt;/symbol&gt;&#xa;&lt;/symbols&gt;"/>
+</node>
+<node COLOR="#338800" CREATED="1255628396643" FOLDED="true" ID="Freemind_Link_1933941127" MODIFIED="1255861065064" POSITION="right" TEXT="6. Scala in Action">
 <node CREATED="1254652716356" ID="Freemind_Link_297016473" MODIFIED="1255807863577" TEXT="DSL&apos;er i Scala">
 <node CREATED="1254652722618" ID="Freemind_Link_82224578" MODIFIED="1254652738559" TEXT="Implicit typekonvertering"/>
 <node CREATED="1254654129890" ID="Freemind_Link_939150883" MODIFIED="1254654169254" TEXT="implicit def conversionMethod(number: Int) : new DateHelper(number)"/>
@@ -300,10 +303,7 @@
 <node CREATED="1255628424773" ID="Freemind_Link_1259804586" MODIFIED="1255628425928" TEXT="Eksempel: http://media.pragprog.com/titles/vsscala/code/UsingScala/ReadingFile.scala"/>
 <node CREATED="1255628432652" ID="Freemind_Link_673314515" MODIFIED="1255628444891" TEXT="import scala.io.Source&#xa;&#xa;Source.fromFile(&quot;filename.txt&quot;).foreach { print }"/>
 </node>
-<node CREATED="1255628456013" ID="Freemind_Link_1685752349" MODIFIED="1255628456808" TEXT="XML">
-<node CREATED="1255629512467" ID="Freemind_Link_1229816679" MODIFIED="1255629517919" TEXT="XML literals">
-<node CREATED="1255628479093" ID="Freemind_Link_123833235" MODIFIED="1255630078071" TEXT="val xmlFragment =&#xa;&lt;symbols&gt;&#xa;  &lt;symbol ticker=&quot;AAPL&quot;&gt;&lt;units&gt;200&lt;/units&gt;&lt;/symbol&gt;&#xa;  &lt;symbol ticker=&quot;IBM&quot;&gt;&lt;units&gt;215&lt;/units&gt;&lt;/symbol&gt;&#xa;&lt;/symbols&gt;"/>
-</node>
+<node COLOR="#338800" CREATED="1255628456013" FOLDED="true" ID="Freemind_Link_1685752349" MODIFIED="1255860729688" TEXT="XML">
 <node CREATED="1255714308220" ID="Freemind_Link_693626322" MODIFIED="1255714327168" TEXT="Variabelinterpolation i XML">
 <node CREATED="1255714327573" ID="Freemind_Link_185052482" MODIFIED="1255714335240" TEXT="val symbol = &quot;GOOG&quot;&#xa;val stockValue = 500&#xa;&#xa;&lt;symbol ticker=&quot;{symbol}&quot;&gt;&lt;price&gt;{stockValue}&lt;/price&gt;&lt;/symbol&gt;"/>
 </node>
@@ -316,7 +316,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1255792686816" ID="Freemind_Link_1527810688" MODIFIED="1255792689650" POSITION="left" TEXT="Mere information">
+<node COLOR="#338800" CREATED="1255792686816" FOLDED="true" ID="Freemind_Link_1527810688" MODIFIED="1255861068448" POSITION="left" TEXT="Mere information">
 <node CREATED="1255792692614" ID="Freemind_Link_1470333067" MODIFIED="1255792724554" TEXT="Hjemmeside">
 <node CREATED="1255792725071" ID="Freemind_Link_1000280081" MODIFIED="1255792729289" TEXT="http://scala-lang.org"/>
 </node>

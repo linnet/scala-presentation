@@ -13,13 +13,13 @@ def isPerfectConcurrent(candidate: Int) = {
     val lower = i * RANGE + 1;
     val upper = candidate min (i + 1) * RANGE
     
-    actor { //<label id="code.fasterperfectnumberfinder.actor" />
-      caller ! sumOfFactorsInRange(lower, upper, candidate) //<label id="code.fasterperfectnumberfinder.send"/>
+    actor {
+      caller ! sumOfFactorsInRange(lower, upper, candidate)
     }
   }
      
   val sum = (0 /: (0 until numberOfPartitions)) { (partialSum, i) =>
-    receive { //<label id="code.fasterperfectnumberfinder.receive" />
+    receive {
       case sumInRange : Int => partialSum + sumInRange
     }
   }
@@ -29,4 +29,4 @@ def isPerfectConcurrent(candidate: Int) = {
 
 println("6 is perfect? " + isPerfectConcurrent(6))
 println("33550336 is perfect? " + isPerfectConcurrent(303550336))
-println("33550337 is perfect? " + isPerfectConcurrent(303550337))
+//println("33550337 is perfect? " + isPerfectConcurrent(303550337))
